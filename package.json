@@ -10,12 +10,12 @@
   "dependencies": {
     "@heroicons/react": "^1.0.1",
     "axios": "^0.21.1",
+    "is-url": "^1.2.4",
     "mongoose": "^5.13.2",
     "next": "11.0.1",
     "react": "17.0.2",
+    "react-copy-to-clipboard": "^5.0.3",
     "react-dom": "17.0.2",
-    "react-shorten-url": "^1.0.5",
-    "react-tiny-spin": "^0.6.5",
     "shortid": "^2.2.16",
     "tinyurl": "^1.1.7",
     "valid-url": "^1.0.9"
