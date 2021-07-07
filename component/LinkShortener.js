@@ -12,6 +12,12 @@ const [copied, setCopied] = useState(false)
 const [loading, setLoading] = useState(false)
 
 
+const changeCopyState = () => {
+setTimeout(() => {
+setCopied(false)
+}, 2000)
+setCopied(true)
+}
 
 const handleInput  = (e) => {
     e.preventDefault()
@@ -54,10 +60,11 @@ const shortenUrl = async () => {
                 value={shortUrl}
                 className='p-2 flex-1 focus:outline-none rounded-md ' />
             <CopyToClipboard text={shortUrl}
-              onCopy={() => setCopied(true)}>
-               {copied ? <button className='bg-red-400 text-white w-40 ml-5 p-2 flex justify-evenly rounded-md hover:cursor-pointer flex-none'>Copied <CheckIcon className='h-7 text-white '/></button> :  <button className='w-40 ml-5 bg-blue-700 p-2 rounded-md hover:cursor-pointer flex-none text-white hover:bg-blue-600'> Click to copy </button>}
+              onCopy={shortUrl && changeCopyState}>
+               {copied ? <button className='bg-red-400 text-white w-40 ml-5 p-2 flex justify-evenly rounded-md hover:cursor-pointer flex-none'>Copied <CheckIcon className='h-6 text-white '/></button> :  <button className='w-40 ml-5 bg-blue-700 p-2 rounded-md hover:cursor-pointer flex-none text-white hover:bg-blue-600'> Click to copy </button>}
            </CopyToClipboard>
             </div>
+
         </div>
     )
 }

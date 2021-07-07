@@ -1,4 +1,4 @@
-POST    http://localhost:3000/api/shortner
+POST    https://link-shortener-kappa.vercel.app//api/shortner
 content-type: application/json
 
 {
