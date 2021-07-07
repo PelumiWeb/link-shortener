@@ -26,7 +26,7 @@ export default async (req, res) => {
                   date: new Date()
                   }
             Url.create(url)      
-            return res.status(201).json({success: true , data: url })
+            return res.status(201).json(url)
         }
       }catch(e){
         return res.status(400).json({success: false })

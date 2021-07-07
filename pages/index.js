@@ -1,4 +1,3 @@
-import axios from 'axios'
 import Head from 'next/head'
 import LinkShortener from '../component/LinkShortener'
 export default function Home() {

@@ -49,7 +49,7 @@ const shortenUrl = async () => {
     return (
         <div className='bg-gray-300 md:w-3/4  p-10 rounded-md m-auto '> 
             <div className='flex items-center justify-between '>  
-            <input placeholder='Place the long link to here' type='text'
+            <input placeholder='Place the long link here' type='text'
             onChange={handleInput}
              className='bg-gray-200 p-2 shorten flex-1 border-gray-500 focus-within:shadow-md focus:outline-none rounded-md' />
              <button onClick={shortenUrl} className='w-40 ml-5 bg-blue-700 p-2 rounded-md hover:cursor-pointer flex-none hover:bg-blue-600 text-white'>{!loading ? 'Shorten' : 'Loading...'}</button>
