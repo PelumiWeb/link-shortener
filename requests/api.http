@@ -2,7 +2,7 @@ POST    https://link-shortener-kappa.vercel.app//api/shortner
 content-type: application/json
 
 {
-"longUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5koBF0S5w2UrVt8PzjBNxUzhHMEAeSZcG9Q&usqp=CAU"
+"longUrl": "https://jhely.bo/p/compra-tu-departamento-2d-con-terraza-en-equipetrol-piso-4-1a8423c0-821b-40e1-ae75-73bc559a8b6f"
 }
 
 

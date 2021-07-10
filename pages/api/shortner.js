@@ -18,7 +18,7 @@ export default async (req, res) => {
           console.log(url)
           return res.status(200).json(url)
         } else {
-          const shortUrl = `${process.env.BASE_URL}/api/${urlCode}` 
+          const shortUrl = `${process.env.BASE_URL}/${urlCode}` 
           url = {
                   longUrl,
                   shortUrl,
